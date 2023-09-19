@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(mainone.jpeg)no-repeat center fixed;
+    background-size:cover;
+    font-family: sans-serif;
+}
+
+.box{
+
+ 
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    left:30%;
+    position: absolute;
+    border-radius: 40px;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+
+.caps{
+    text-transform: uppercase;
+}
+.small{
+    text-transform: lowercase;
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 -1px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+h4{
+    
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f92727;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #1125ff;
+}
+
+.a1
+{
+    text-decoration: none;
+    padding-left: 15%;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+    color: #0303ff;
+}
+
+.a2{
+    text-decoration: none;
+    padding-left: 30%;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+    color: #0303ff;
+}
+
+a:hover
+{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

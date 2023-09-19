@@ -1,0 +1,115 @@
+html{
+	background-color: #1e3d59;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bg-image {
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.navbar{
+    width: 100%;    
+    margin: auto;
+    background-color: #f5f0e1;
+    padding: 10px 0px;
+    text-align: center;
+    
+}
+
+.c {
+    margin: 100px auto;
+    max-width: 500px;
+    background-color: #f5f0e1;
+    padding: 20px;
+	border-color: #ffffff;
+}    
+
+p{
+    font-size: 20px;
+}
+
+.details{
+    display: flex;
+}
+
+.c1{
+    flex: auto;
+    margin-left: 10px;
+    max-width: 200px;
+	background-color: transparent;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.c2{
+    flex: auto;	
+    margin-left: 15px;
+    max-width: 600px;
+	background-color: transparent;
+    padding-top: 15px;
+    
+}  
+
+#inp{
+	margin-top: 15px;
+	height: 20px;
+	width: 275px;
+	display: flex;
+	margin-bottom: 20px;	
+	text-align: left;
+	font-size: 20px;
+	background:#f5f0e1;
+	
+}
+
+#checkbox{
+    padding-left: 25px;
+}
+
+#submit{
+    width: 175px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    background-color: #ff0000;
+    color: #f5f0e1;
+    border-radius: 5px;
+    
+}
+#myCheckbox{
+    height: 15px;
+    width: 15px;
+}
+
+#submit:hover{
+    background-color: #19c1d7;
+    color: black;
+}
+
+
+/* #back{
+width: 175px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    background-color:#19c1d7;
+    color: #f5f0e1;
+    border-radius: 5px;
+}
+
+#submit:hover{
+    background-color: #19c1d7;
+    color: whi
+;
+} */

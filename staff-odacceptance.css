@@ -1,0 +1,268 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bg-image {
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    background-color: #f5f0e1;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+.c {
+    margin: 75px auto;
+    max-width: 1000px;
+    background-color: #f5f0e1;
+    padding: 20px;
+    border-radius: 25px;
+
+  }
+
+  .c1{
+	
+    margin: 20px 50px;
+    max-width: 100%;
+    background-color:#335C67;
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+.logo{
+	padding-left: 10%;
+	height:5%;
+	width:5%;
+}  
+
+.navbar ul li{
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+	padding-top: 10px;
+    padding-right: 10px;
+}
+
+.navbar ul li a{
+		text-decoration: none;
+		color:black;
+		text-transform: uppercase;
+		position: relative;
+	}	
+ul li a:hover{
+		color: #ff3c00;
+		text-decoration: underline;
+	}	
+.ch1{
+	color: #000000;
+	margin: 0% 40%;
+    text-align: center;
+		
+}
+html{
+	background-color: #335C67;
+}
+label{
+    color: #f5f0e1;
+    padding-left: 0%;
+    font-size: 150%;
+}
+
+#small{
+    text-transform: lowercase;
+}
+label{
+    margin-right: 10px;
+	font-size: 20px;
+	padding-left: 30%;
+	font-weight: bold;
+}
+#inp{
+	padding-top: 10px;
+	height: 30px;
+	width: 300px;
+	display: flex;
+	text-transform:uppercase;
+	align-self: center;
+	margin-left: 30%;
+	border-radius: 5px;
+	margin-bottom: 20px;	
+	text-align: left;
+	font-size: 20px;
+	background:#f5f0e1;
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+	
+}
+
+select{
+	padding-top: 10px;
+	height: 40px;
+	width: 300px;
+	display: flex;
+	align-self: center;
+	margin-left: 30%;
+	border-radius: 5px;
+	margin-bottom: 20px;	
+	text-align: left;
+	font-size: 20px;
+	background:#f5f0e1;
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+}
+textarea{
+	
+	height: 50px;
+	width: 250px;	
+	text-align: justify;
+	font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+	align-self: fixed;
+}
+
+.button{
+	
+	display: inline;
+	background-color:#19c1d7;
+	color: #000000;
+	padding: 10px 30px;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	align-items:center;
+	font-size: 20px;
+	transition: background-color 0.3s ease;
+}
+
+.button1{
+	
+	display: inline;
+	background-color:#19c1d7;
+	color: #000000;
+	padding: 10px 30px;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	align-items: center;
+	font-size: 20px;
+	transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+	background-color: #0dff00;
+	cursor: pointer;
+}
+
+.button1:hover {
+	background-color: #ff0000;
+	cursor: pointer;}
+
+.message {
+    display: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 10px;
+	font-size: 40px;
+}
+
+input[type="checkbox"] + #checkbox {
+	display: inline;
+	color: #f5f0e1;
+	font-size: 25px;
+	align-items: center;
+	font-style: italic;
+
+}
+
+input[type="checkbox"]{
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	display: inline;
+}
+#p2{
+	color: #f5f0e1;
+	font-size: 25px;
+	display: inline;
+	padding-inline-start: 10px;
+	font-weight: bolder;
+}
+
+#p1{
+	padding-top: 10px;
+	color: #f5f0e1;
+	font-size: 20px;
+	padding-bottom: 0px;
+	display: inline;
+	
+}
+
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+	margin: auto;
+	margin-top:40vh;
+	height: 200px;
+	width: 400px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmButton{
+	width: 100px;
+	background-color: #19c1d7;
+	border: 1px black solid ;
+	border-radius: 3px;
+}
+
+#cancelButton{
+	width: 100px;
+	background-color: #19c1d7;
+	border: 1px black solid ;
+	border-radius: 3px;
+}
+
+#cancelButton:hover{
+	background-color: #ff0000;
+}
+
+#confirmButton:hover{
+	background-color:#0dff00;
+}

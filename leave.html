@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apply OD-SRR</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="od.css">
+        <script>
+            function showMessage() {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var message = xhr.responseText;
+                        var messageElement = document.getElementById('message');
+                        messageElement.innerHTML = message;
+                        messageElement.style.display = 'block';
+                        setTimeout(function() {
+                            messageElement.style.display = 'none';
+                        }, 5000); // 5 seconds thaan unaku limit uh
+                    }
+                };
+                xhr.open('GET', 'odmessage.php', true);
+                xhr.send();
+            }
+        </script>
+    </head>
+    
+    <body onload="showMessage()">
+        <div class="navbar">    
+            <img src="srr1.png" class="logo">   
+            <ul>
+                <li> <a href="home.php">Home</a> </li> 
+                <li> <a href="od.html">Apply OD</a> </li>
+                <li> <a href="leave.html">Apply leave</a>
+                <li><a href="srr.html">Student Report</a></li>
+                <li> <a href="stuprofile.php">Profile</a> </li>
+    
+            </ul>
+        </div>
+        <form name="odform" action="leave.php" method="POST" >
+
+            <div id="message" class="message">
+                    <!-- Message will be displayed here -->
+            </div>
+
+            <div class="c">
+                <h1 class="ch1">LEAVE</h1>
+                <h2 class="ch1">Application</h2>
+                <div class="c1">
+
+                    <label>Nature of leave</label>
+                    <select name="nol" class="noo" required>
+                        <option disabled selected>Select your Leave type</option>
+                        <option value="Pre Leave">Pre Leave</option>
+                        <option value="Post Leave">Post leave</option>
+                    </select>
+
+                    <label>No.of Days</label>
+                    <input id="inp" type="number" class="nod" name="nod" placeholder="2" required>
+
+                    <label>From Date</label>
+                    <input id="inp" type="date" class="fd" name="fd" required>
+
+                    <label>Detailed Discription</label>
+                    <textarea type="text" class="dd" name="dd" placeholder="Body of the FORMAL LETTER" required></textarea>
+
+                    <label>Proof</label>
+                    <input id="inp" type="file" class="proof" name="proof" required>
+
+                    <label>E-Sign</label>
+                    <input id="inp" type="file" class="es" name="es" required>
+
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox" required>
+                    <p id="checkbox">I hereby assure you that the above filled details are ture,and move my application to my Mentor for approval.</p>
+                    <br>
+
+                    <input  class="button" type="submit" value="SUBMIT">
+
+                </div>
+            </div>
+            </form>
+        
+    </body>
+</html>
